@@ -1,0 +1,129 @@
+void main() {
+    // Single-line comment test
+    print("=== NPAV Compiler Feature Test ===\n");
+    
+    /* Multi-line comment test
+       This tests block comments */
+    
+    // 1. String literals and escape sequences
+    print("Testing strings:\n");
+    print("Hello, World!\n");
+    print("Tab:\tIndented\n");
+    print("Quote: \"Hello\"\n");
+    print("Backslash: \\\n");
+    print("\n");
+    
+    // 2. Number literals and arithmetic
+    print("Testing arithmetic:\n");
+    print("2 + 3 = ");
+    print(2 + 3);
+    print("\n");
+    print("10 - 4 = ");
+    print(10 - 4);
+    print("\n");
+    print("6 * 7 = ");
+    print(6 * 7);
+    print("\n");
+    print("20 / 4 = ");
+    print(20 / 4);
+    print("\n");
+    print("Complex: (5 + 3) * 2 = ");
+    print((5 + 3) * 2);
+    print("\n\n");
+    
+    // 3. Variable declarations and assignments
+    print("Testing variables:\n");
+    int a = 42;
+    print("a = ");
+    print(a);
+    print("\n");
+    
+    int b;  // Uninitialized variable (should warn and default to 0)
+    print("b (uninitialized) = ");
+    print(b);
+    print("\n");
+    
+    b = 100;  // Assignment
+    print("b after assignment = ");
+    print(b);
+    print("\n");
+    
+    // Variable in expressions
+    int c = a + b;
+    print("c = a + b = ");
+    print(c);
+    print("\n\n");
+    
+    // 4. Comparison operators
+    print("Testing comparisons:\n");
+    print("5 == 5: ");
+    print(5 == 5);
+    print("\n");
+    print("5 != 3: ");
+    print(5 != 3);
+    print("\n");
+    print("10 > 5: ");
+    print(10 > 5);
+    print("\n");
+    print("3 < 8: ");
+    print(3 < 8);
+    print("\n\n");
+    
+    // 5. If-else statements
+    print("Testing if-else:\n");
+    int x = 10;
+    if (x > 5) {
+        print("x is greater than 5\n");
+    }
+    
+    if (x < 5) {
+        print("x is less than 5\n");
+    } else {
+        print("x is not less than 5\n");
+    }
+    
+    // Nested if
+    if (x == 10) {
+        print("x equals 10\n");
+        if (x > 0) {
+            print("x is also positive\n");
+        }
+    }
+    print("\n");
+    
+    // 6. While loops
+    print("Testing while loop:\n");
+    int counter = 1;
+    while (counter <= 3) {
+        print("Counter: ");
+        print(counter);
+        print("\n");
+        counter = counter + 1;
+    }
+    print("\n");
+    
+    // 7. Block statements
+    print("Testing blocks:\n");
+    {
+        int local = 99;
+        print("Inside block, local = ");
+        print(local);
+        print("\n");
+    }
+    
+    // 8. Complex expressions with variables
+    print("Testing complex expressions:\n");
+    int result = (a + b) * 2 - c / 3;
+    print("(a + b) * 2 - c / 3 = ");
+    print(result);
+    print("\n");
+    
+    // 9. Function calls in expressions
+    print("Testing function calls in expressions:\n");
+    print("Result + 5 = ");
+    print(result + 5);
+    print("\n");
+    
+    // 10. Return statement (optional)
+    print("\nAll tests completed successfully!\n");
+}
